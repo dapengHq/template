@@ -1,0 +1,310 @@
+@import './reset.scss';
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+@import './fonts/iconfont.css';
+@import './preview.scss';
+
+body {
+    margin: 0;
+    height: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+    font-size: 12px;
+    background: $backgroundColor;
+}
+
+label {
+    font-weight: 700;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#app {
+    height: 100%;
+
+    .no-need-restyle {
+        font-size: 14px;
+
+        // font-size公共样式
+        .el-date-editor .el-range__icon,
+        .el-select .el-input .el-select__caret,
+        .el-select-dropdown__item,
+        .el-form-item__label,
+        .el-form-item__content,
+        .el-checkbox__label,
+        .el-button--medium,
+        .el-input--medium,
+        .el-menu-item,
+        .el-popover,
+        .el-input {
+            font-size: 14px;
+        }
+
+        // hight、line-hight行高变更
+        .el-input--medium .el-input__icon,
+        .el-input--medium .el-input__inner {
+            height: 36px;
+            line-height: 36px;
+        }
+        .el-range-editor--medium.el-input__inner {
+            height: 36px;
+            .el-input__icon {
+                line-height: 19px;
+            }
+            .el-range-separator {
+                line-height: 19px;
+            }
+        }
+
+        .el-button.el-button--solid,
+        .el-button.el-button--primary,
+        .el-button.el-button--default {
+            height: 36px;
+            padding: 0 16px;
+        }
+        .el-form-item--medium .el-form-item__content,
+        .el-form-item--medium .el-form-item__label {
+            line-height: 36px;
+        }
+    }
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+}
+
+div:focus {
+    outline: none;
+}
+
+.clearfix {
+    &:after {
+        visibility: hidden;
+        display: block;
+        font-size: 0;
+        content: ' ';
+        clear: both;
+        height: 0;
+    }
+}
+
+// main-container global css
+.app-container {
+    // padding: 0 10px 10px 10px;
+    // overflow: hidden;
+    // border-top: 4px solid #F2F2F2;
+    background-color: #fff;
+    height: 100%;
+
+    .query-header {
+        .el-form {
+            // overflow: hidden;
+            margin-left: -12px;
+            margin-right: -12px;
+        }
+
+        .el-form-item {
+            margin: 0 12px 24px 12px;
+            width: calc(16.66% - 24px);
+
+            .el-form-item__label {
+                line-height: 20px;
+            }
+
+            &:last-child:not(:first-child) {
+                float: right;
+
+                .el-form-item__content {
+                    display: flex;
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        .control-container {
+            flex-shrink: 0;
+            max-width: 200px;
+
+            .el-button {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    .table-page-header {
+        padding: 20px 24px 1px 24px;
+        background-color: #fff;
+        border-radius: 0;
+        position: relative;
+
+        .el-form {
+            // overflow: hidden;
+            margin-left: -8px;
+            margin-right: -8px;
+
+            &.normal-form {
+                .el-form-item {
+                    width: auto;
+
+                    .el-form-item__label {
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+
+        .el-form-item {
+            margin: 0 8px 12px 8px;
+            width: calc(16.66% - 16px);
+
+            .el-form-item__label {
+                line-height: 20px;
+            }
+
+            &:last-child:not(:first-child) {
+                float: right;
+
+                .el-form-item__content {
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: row-reverse;
+
+                    .el-button + .el-button {
+                        margin-left: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+
+        .control-container {
+            flex-shrink: 0;
+            max-width: 200px;
+
+            .el-button {
+                margin-bottom: 24px;
+            }
+        }
+
+        &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 24px;
+            right: 24px;
+            bottom: 0px;
+            height: 1px;
+            margin: auto;
+            background: #e0e6ed;
+        }
+    }
+
+    .table-page-content {
+        padding: 12px 24px 20px 24px;
+        background-color: #fff;
+        border-radius: 0;
+
+        .el-button + span {
+            margin-left: 10px;
+        }
+    }
+}
+
+.table-page-content.dialog-table {
+    padding: 12px 0 0 0;
+}
+
+// 用于模拟el-button-text交互样式
+.simulate-btn-text {
+    color: #1a71ff;
+    font-weight: 500;
+    &:hover {
+        color: #4080ff;
+    }
+    &:focus {
+        color: #0e42d2;
+    }
+}
+
+.el-pagination {
+    margin-top: 20px;
+    text-align: end;
+}
+
+svg {
+    display: inline-block;
+}
+
+/* 隐藏 input number 箭头 */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+/* dialog 统一修改底部按钮的位置交换 */
+.dialog-footer,
+.el-dialog__footer {
+    display: flex;
+    justify-content: flex-start !important;
+    flex-direction: row-reverse;
+
+    .el-button + .el-button {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+}
+
+.tags-view-container {
+    .el-scrollbar__wrap {
+        &::-webkit-scrollbar {
+            height: 0;
+            opacity: 0;
+        }
+    }
+}
+
+.el-autocomplete-suggestion.el-popper.symbol {
+    width: 240px !important;
+}
+
+.el-scrollbar__wrap {
+    overflow-x: hidden;
+}
+
+.el-loading-spinner .circular {
+    margin: 0 auto;
+}
+
+#nprogress .bar {
+    background: #185cf6 !important;
+}

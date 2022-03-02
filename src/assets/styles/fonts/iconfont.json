@@ -1,0 +1,135 @@
+{
+  "id": "2825061",
+  "name": "bos",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-bos-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "24470478",
+      "name": "保证金",
+      "font_class": "baozhengjin",
+      "unicode": "e62c",
+      "unicode_decimal": 58924
+    },
+    {
+      "icon_id": "24470479",
+      "name": "风险控制",
+      "font_class": "fengxiankongzhi",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "24470480",
+      "name": "产品管理",
+      "font_class": "chanpinguanli",
+      "unicode": "e62e",
+      "unicode_decimal": 58926
+    },
+    {
+      "icon_id": "24470481",
+      "name": "持仓管理",
+      "font_class": "chicangguanli",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "24470482",
+      "name": "佣金",
+      "font_class": "yongjin",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "24470483",
+      "name": "利息",
+      "font_class": "lixi",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "24470484",
+      "name": "IPO",
+      "font_class": "IPO",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "24470485",
+      "name": "公司信息",
+      "font_class": "gongsixinxi",
+      "unicode": "e633",
+      "unicode_decimal": 58931
+    },
+    {
+      "icon_id": "24470486",
+      "name": "权限管理",
+      "font_class": "quanxianguanli",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "24470488",
+      "name": "OMS",
+      "font_class": "OMS",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "24470489",
+      "name": "客户账本",
+      "font_class": "kehuzhangben",
+      "unicode": "e636",
+      "unicode_decimal": 58934
+    },
+    {
+      "icon_id": "24470490",
+      "name": "订单相关",
+      "font_class": "dingdanxiangguan",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "24470491",
+      "name": "记账明细",
+      "font_class": "jizhangmingxi",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "24470492",
+      "name": "汇率",
+      "font_class": "huishuai",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "24470493",
+      "name": "每日清算",
+      "font_class": "meiriqingsuan",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "24470494",
+      "name": "客户出入金",
+      "font_class": "kehuchurujin",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "24470495",
+      "name": "消息中心",
+      "font_class": "xiaoxizhongxin",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "24470496",
+      "name": "客户管理",
+      "font_class": "kehuguanli",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    }
+  ]
+}

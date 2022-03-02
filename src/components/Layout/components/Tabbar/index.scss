@@ -1,0 +1,66 @@
+.tab-bar-container {
+  display: flex;
+  height: 36px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #17449a;
+  
+  .tab-list-wrap {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    .tab-list-container {
+      display: flex;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      .tab-list-item {
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        flex-shrink: 0;
+        color: #FFF;
+        cursor: pointer;
+        .el-icon-close {
+          flex-shrink: 0;
+          flex-grow: 0;
+          font-size: 16px;
+        }
+
+        .tab-list-item-title {
+          padding-right: 6px;
+        }
+
+        &.active {
+          color: #17449a;
+          background-color: #FFF;
+        }
+      }
+    }
+
+  }
+
+  .tab-left,
+  .tab-right {
+    padding: 0 10px;
+    color: #FFF;
+    cursor: pointer;
+  }
+
+  .tab-close {
+    .el-dropdown-link {
+      padding: 0 10px;
+      color: #FFF;
+      cursor: pointer;
+    }
+  }
+
+  .toggle-side-bar-btn {
+    padding-left: 4px;
+    .el-icon-s-fold,
+    .el-icon-s-unfold {
+      font-size: 16px;
+      color: #FFF;
+    }
+  }
+}

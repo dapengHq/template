@@ -1,0 +1,66 @@
+@import './variables.scss';
+#app {
+
+  .sidebar-container {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    
+    background-color: $menuBg;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: width .3s;
+    &.not-fold-width {
+      
+    }
+
+    
+
+    .el-menu--collapse {
+      width: $sideBarCollapseWidth;
+
+      .el-submenu__icon-arrow {
+        font-size: 16px;
+        right: 2px
+      }
+    }
+
+    
+    // reset element-ui style
+    .el-menu {
+      border-right: 0 none;
+
+      &:not(.el-menu--collapse) {
+        width: $sideBarWidthPercent;
+        min-height: 100%;
+      }
+
+      .el-submenu__title,
+      .el-menu-item {
+        padding: 0!important;
+        height: 36px;
+        line-height: 36px;
+      }
+
+      
+    }
+    
+    // reset
+    .el-menu {
+      font-size: 14px;
+
+      .el-menu-item {
+        &.is-active {
+          background-color: $subMenuActive;
+        }
+      }
+    }
+  }
+}
+
+.el-menu--vertical {
+  .el-menu-item {
+    height: 36px;
+    line-height: 36px;
+  }
+}

@@ -1,0 +1,39 @@
+@import '~@/assets/styles/mixin.scss';
+@import '~@/assets/styles/variables.scss';
+
+.app-wrapper {
+  @include clearfix;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+
+  .fix-header {
+    display: flex;
+    width: 100%;
+    height: $topBarHeight;
+    flex-shrink: 0;
+    background-color: #FFF;
+    box-sizing: border-box;
+
+    .logo-container {
+      width: $logoWidth;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      text-align: center;
+      >img {
+        display: block;
+        // height: 100%;
+      }
+    }
+  }
+
+  .main-container {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+  }
+}
